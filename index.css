@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --main-clor: rgb(208, 13, 13);
+}
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s linear;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    border-bottom: var(--border);
+    top: 0;
+    left: 0;
+    right: 0;
+    background: lightgrey;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 5rem;
+}
+
+.header .logo img:hover {
+    cursor: pointer;
+    height: 5.2rem;
+    transition: 0.1s;
+}
+
+.header .navbar a {
+    margin: 0 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(100, 99, 99);
+}
+
+.header .navbar a:hover {
+    font-size: 2rem;
+    color: var(--main-clor);
+    text-decoration: underline;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(..//portfoliobg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.home .content-portion {
+    max-width: 80rem;
+}
+
+.home .content-portion .msg-portion {
+    padding-left: 2rem;
+    flex: 1 1 45rem;
+}
+
+.home .content-portion .msg-portion h1 {
+    font-size: 2rem;
+    letter-spacing: 2.2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home .content-portion .msg-portion h1 span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.home .content-portion .msg-portion h2 {
+    font-size: 5rem;
+}
+
+.home .content-portion .msg-portion h2 span {
+    color: var(--main-clor);
+}
+
+.home .content-portion .msg-portion p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.btn {
+    font-size: 1.8rem;
+    background: var(--main-clor);
+    display: inline-block;
+    padding: .9rem 3rem;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+.home .image {
+    align-items: center;
+    flex: 1 1 45rem;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+#manu-btn {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    color: rgb(100, 99, 99);
+    display: none;
+}
+
+.home .content-portion .msg-portion {
+    padding: 11rem;
+    flex: 1 1 45rem;
+}
+
+#icons {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    margin-top: 9rem;
+}
+
+#icon {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    display: none;
+}
+
+.whatsapp {
+    color: rgb(100, 99, 99);
+}
+
+#facebook {
+    color: rgb(100, 99, 99)
+}
+
+#facebook:hover {
+    font-size: 3.3rem;
+    transition: .1s;
+    color: var(--main-clor);
+}
+
+#linkdin {
+    color: rgb(100, 99, 99);
+}
+
+#insta {
+    color: rgb(100, 99, 99);
+}
+
+#x {
+    color: rgb(100, 99, 99);
+}
+
+#telegram {
+    color: rgb(100, 99, 99);
+}
+
+#insta:hover {
+    color: var(--main-clor);
+    transition: .1s;
+    font-size: 3.3rem;
+}
+
+#linkdin:hover {
+    color: var(--main-clor);
+    transition: .1s;
+    font-size: 3.3rem;
+    box-shadow: 5px black;
+}
+
+#telegram:hover {
+    color: var(--main-clor);
+    transition: .1s;
+    font-size: 3.3rem;
+    box-shadow: 5px black;
+}
+
+#x:hover {
+    color: var(--main-clor);
+    transition: .1s;
+    font-size: 3.3rem;
+    box-shadow: 5px black;
+}
+
+#whatsapp:hover {
+    color: var(--main-clor);
+    transition: .1s;
+    font-size: 3.3rem;
+    box-shadow: 5px black;
+}
+
+.about {
+    background: rgb(212, 210, 210);
+}
+
+.about h1 {
+    font-size: 4.5rem;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.about h1 span {
+    color: var(--main-clor);
+}
+
+.about .about-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about-content .about-items:hover {
+    background: var(--main-clor);
+}
+
+.about-content .about-items:hover button {
+    background: rgb(90, 89, 89);
+}
+
+.about-content .about-items:hover h1 {
+    color: black;
+}
+
+.about-content .about-items:hover p {
+    color: white;
+}
+
+.about-items {
+    flex-basis: 41%;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 3px rgb(129, 128, 128);
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.about-items h1 {
+    font-size: 4rem;
+    color: rgb(90, 89, 89);
+}
+
+.about-items p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+
+.about-items button {
+    font-size: 1.8rem;
+    background: var(--main-clor);
+    display: inline-block;
+    padding: .9rem 3rem;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+}
+
+.about-items button:hover {
+    padding: 1rem 3.2rem;
+    transition: none;
+    height: 5rem;
+}
+
+@media(max-width:776px) {
+    .about .about-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    .about-items {
+        margin: 10px;
+    }
+}
+
+@media(max-width:900px) {
+    #manu-btn {
+        display: inline-block;
+    }
+    #icon {
+        display: inline-block;
+    }
+    #icons {
+        display: none;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 30rem;
+        border: 1px var(--main-clor) solid;
+        height: calc(100vh - 9.5rem);
+        background-color: #fff;
+    }
+    .header .navbar a {
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+    }
+    .header .navbar.active {
+        right: 0;
+    }
+    .home {
+        justify-content: center;
+        background-position: left;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:775px) {
+    .home {
+        justify-content: center;
+        background-position: left;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
